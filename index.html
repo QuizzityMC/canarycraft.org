@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADSCRAFT Civilisations</title>
+    <style>
+        body {
+            font-family: 'Minecraft', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #ff9d00 3px solid;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header nav a, .button {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 2px solid #ff9d00;
+            transition: all 0.3s ease;
+            border-radius: 25px;
+            display: inline-block;
+        }
+        header nav a:hover, .button:hover {
+            background-color: #ff9d00;
+            color: #000000;
+        }
+        #showcase {
+            min-height: 600px;
+            background: url('/image.png?height=600&width=1200') no-repeat center center/cover;
+            text-align: center;
+            position: relative;
+        }
+        #showcase::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .logo-container {
+            padding: 50px 0;
+            position: relative;
+            z-index: 1;
+        }
+        .logo-container img {
+            max-width: 600px;
+            width: 90%;
+            height: auto;
+        }
+        #showcase p {
+            font-size: 24px;
+            margin-top: 20px;
+            position: relative;
+            z-index: 1;
+            color: #ff9d00;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .server-info {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 40px 0;
+            text-align: center;
+        }
+        .server-info h2 {
+            color: #ff9d00;
+            margin-bottom: 20px;
+        }
+        .server-info .ip {
+            background: rgba(255, 157, 0, 0.1);
+            padding: 15px;
+            border: 2px solid #ff9d00;
+            display: inline-block;
+            font-size: 24px;
+            margin: 20px 0;
+            border-radius: 15px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px 0;
+        }
+        .feature-box {
+            background: rgba(255, 157, 0, 0.1);
+            padding: 20px;
+            border: 1px solid #ff9d00;
+            text-align: center;
+            border-radius: 15px;
+        }
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+            border-top: #ff9d00 3px solid;
+        }
+        .canary-chat {
+            background-color: #ffff00;
+            color: #000000;
+            font-weight: bold;
+        }
+        .canary-chat:hover {
+            background-color: #e6e600;
+        }
+        .updates {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px 0;
+        }
+        .updates h2 {
+            color: #ff9d00;
+            text-align: center;
+        }
+        .update-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .update-list li {
+            background: rgba(255, 157, 0, 0.1);
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            header nav {
+                float: none;
+                text-align: center;
+            }
+            header nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+        }
+        #showcase h1 {
+            font-size: 48px;
+            color: #ff9d00;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 10px;
+        }
+        #showcase .subtitle {
+            font-size: 24px;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#rules">Rules</a>
+                <a href="#updates">Updates</a>
+                <a href="https://canarychat.me/" target="_blank" class="canary-chat">Canary Chat</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <div class="logo-container">
+                <img src="/city.png?height=200&width=600" alt="ADSCRAFT Civilisations">
+            </div>
+            <h1>ADSCRAFT Civilisations</h1>
+            <p class="subtitle">(also known as CanaryCraft)</p>
+            <p>Join the Civilisations adventure today!</p>
+        </div>
+    </section>
+
+    <section class="server-info">
+        <div class="container">
+            <h2>Join Our Civilisations Server</h2>
+            <div class="ip">mc.canarycraft.org</div>
+            <p>Connect with other players and build your own civilization in our unique Minecraft world!</p>
+            <a href="https://canarychat.me/" target="_blank" class="button canary-chat">Join our Official Canary Chat</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature-box">
+                <h3>Custom Civilisations</h3>
+                <p>Create and grow your own civilization with unique mechanics</p>
+            </div>
+            <div class="feature-box">
+                <h3>Active Community</h3>
+                <p>Join our friendly and active player base</p>
+            </div>
+            <div class="feature-box">
+                <h3>Regular Events</h3>
+                <p>Participate in exciting community events and competitions</p>
+            </div>
+            <div class="feature-box">
+                <h3>ADSCRAFT AI Bot</h3>
+                <p>Interact with our custom AI trained on ADSCRAFT lore and mechanics</p>
+                <a href="https://notebooklm.google.com/notebook/7f38e454-f07d-4ad8-ab4a-2f0aca9f37f3?pli=1" target="_blank" class="button">Try our AI Bot</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="updates">
+        <div class="container">
+            <h2>Latest Updates</h2>
+            <ul class="update-list" id="updates">
+                <!-- Updates will be dynamically inserted here -->
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ADSCRAFT. Not affiliated with Mojang AB.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/rss-parser@3.12.0/dist/rss-parser.min.js"></script>
+    <script>
+        // Function to fetch and parse RSS feed
+        async function fetchRSSFeed() {
+            const CORS_PROXY = "https://cors-anywhere.herokuapp.com/";
+            const RSS_URL = "https://example.com/rss-feed.xml"; // Replace with your actual RSS feed URL
+
+            const parser = new RSSParser();
+            try {
+                const feed = await parser.parseURL(CORS_PROXY + RSS_URL);
+                const updatesList = document.getElementById('updates');
+                updatesList.innerHTML = ''; // Clear existing content
+
+                feed.items.slice(0, 5).forEach(item => {
+                    const li = document.createElement('li');
+                    const date = new Date(item.pubDate).toLocaleDateString();
+                    li.innerHTML = `<strong>${date}</strong> - ${item.title}<br>${item.contentSnippet}`;
+                    updatesList.appendChild(li);
+                });
+            } catch (error) {
+                console.error('Error fetching RSS feed:', error);
+                document.getElementById('updates').innerHTML = '<li>Unable to load updates at this time.</li>';
+            }
+        }
+
+        // Call the function to fetch RSS feed
+        fetchRSSFeed();
+    </script>
+</body>
+</html>
+
